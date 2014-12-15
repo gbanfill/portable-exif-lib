@@ -1,7 +1,7 @@
 portable-exif-lib
 =================
 
-Portable EXIF library for Windows 8, Windows Phone and Silverlight.
+Portable EXIF library for Windows 8, Windows Phone, Silverlight, Xamarin.Android and Xamarin.IOS.
 
 Based completely on [ExifLib - A Fast Exif Data Extractor for .NET 2.0+](http://www.codeproject.com/Articles/36342/ExifLib-A-Fast-Exif-Data-Extractor-for-NET-2-0) created by [Simon McKenzie](http://www.codeproject.com/Members/SimonMcKenzie) and released on Code Project under [Code Project Open License](http://www.codeproject.com/info/cpol10.aspx).
 
