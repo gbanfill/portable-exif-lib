@@ -13,6 +13,6 @@
     <description>Portable EXIF library for Xamarin.Android, Xamarin.IOS, Windows 8, Windows Phone and Silverlight.</description>
     <releaseNotes>This release only includes support for reading data from EXIF files.</releaseNotes>
     <copyright>Copyright 2014</copyright>
-    <tags></tags>
+    <tags>EXIF</tags>
   </metadata>
 </package>
