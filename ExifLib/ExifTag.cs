@@ -191,6 +191,25 @@ namespace ExifLib
                     case ExifId.UserComment: info.UserComment = GetStringValue(); break;
                     case ExifId.ExposureTime: info.ExposureTime = GetNumericValue(0); break;
                     case ExifId.FNumber: info.FNumber = GetNumericValue(0); break;
+                    case ExifId.FocalLength: 
+                        info.FocalLength = GetStringValue();
+                        if (info.FocalLength.Contains("/"))
+                        {
+                            var focalString = info.FocalLength.Split('/');
+                            var value = int.Parse(focalString[0]) / int.Parse(focalString[1]);
+                            info.FocalLengthCalculated = value;
+                        }
+                        else
+                        {
+                            int focalLengthValue = 0;
+
+                            if (int.TryParse(info.FocalLength, out focalLengthValue))
+                            {
+                                info.FocalLengthCalculated = focalLengthValue;
+                            }
+
+                        }
+                        break;
                     case ExifId.FlashUsed: info.Flash = (ExifFlash)GetInt(0); break;
                     default: break;
                 }

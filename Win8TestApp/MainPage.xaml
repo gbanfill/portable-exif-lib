@@ -44,6 +44,9 @@
             <TextBlock Margin="0,0,0,12"
                        FontSize="20"
                        Text="Width" />
+            <TextBlock Margin="0,0,0,12"
+                       FontSize="20"
+                       Text="Focal" />
         </StackPanel>
         <StackPanel Grid.Column="2" Margin="24,24,6,0">
             <TextBlock Margin="0,0,0,12"
@@ -73,6 +76,9 @@
             <TextBlock Margin="0,0,0,12"
                        FontSize="20"
                        Text="{Binding Width}" />
+            <TextBlock Margin="0,0,0,12"
+                       FontSize="20"
+                       Text="{Binding FocalLengthCalculated}" />
         </StackPanel>
     </Grid>
 </Page>

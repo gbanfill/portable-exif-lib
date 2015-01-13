@@ -40,6 +40,7 @@ namespace ExifLib
         ThumbnailLength = 0x202,
         ExposureTime = 0x829A,
         FNumber = 0x829D,
+        FocalLength = 0x920A,
         Copyright = 0x8298,
         DateTimeOriginal = 0x9003,
         FlashUsed = 0x9209,

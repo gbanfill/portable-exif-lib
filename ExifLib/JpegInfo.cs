@@ -12,6 +12,23 @@ namespace ExifLib
             get;
             set;
         }
+        /// <summary>
+        /// Focal Length brought out of EXIF data
+        /// </summary>
+        public string FocalLength
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// Calculated focal length so that it is more readable
+        /// </summary>
+        public int FocalLengthCalculated
+        {
+            get;
+            set;
+        }
 
         /// <summary>
         /// The Jpeg file size, in bytes.
