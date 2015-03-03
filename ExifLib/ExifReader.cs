@@ -104,7 +104,6 @@ namespace ExifLib
                 }
 
                 section = null;
-                GC.Collect();
             }
         }
 
