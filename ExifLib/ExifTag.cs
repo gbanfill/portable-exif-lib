@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text;
 
-namespace ExifLib
+namespace Linknode.ExifLib
 {
     /// <summary>
     /// As per: http://www.media.mit.edu/pia/Research/deepview/exif.html

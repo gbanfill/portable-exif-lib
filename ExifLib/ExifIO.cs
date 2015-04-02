@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ExifLib
+namespace Linknode.ExifLib
 {
     /// <summary>
     /// Utility to handle multi-byte primitives in both big and little endian.

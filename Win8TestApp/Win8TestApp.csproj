@@ -101,9 +101,9 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
-    <ProjectReference Include="..\ExifLib\ExifLib.csproj">
+    <ProjectReference Include="..\ExifLib\Linknode.ExifLib.csproj">
       <Project>{4b695d0b-1fdf-4570-ad7a-6c431c55341b}</Project>
-      <Name>ExifLib</Name>
+      <Name>Linknode.ExifLib</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

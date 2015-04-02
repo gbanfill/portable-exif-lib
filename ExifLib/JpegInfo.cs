@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ExifLib
+namespace Linknode.ExifLib
 {
     public class JpegInfo
     {

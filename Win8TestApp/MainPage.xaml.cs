@@ -1,6 +1,6 @@
 ﻿using System;
 using System.IO;
-using ExifLib;
+using Linknode.ExifLib;
 using Windows.Storage;
 using Windows.Storage.Pickers;
 using Windows.UI.Xaml;

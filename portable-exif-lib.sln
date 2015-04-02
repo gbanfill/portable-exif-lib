@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExifLib", "ExifLib\ExifLib.csproj", "{4B695D0B-1FDF-4570-AD7A-6C431C55341B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linknode.ExifLib", "ExifLib\Linknode.ExifLib.csproj", "{4B695D0B-1FDF-4570-AD7A-6C431C55341B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP8TestApp", "WP8TestApp\WP8TestApp.csproj", "{BF5124CF-C9FB-439F-A219-CF3B76C21C44}"
 EndProject
