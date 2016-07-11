@@ -1,0 +1,2 @@
+mono Nuget.exe pack ExifLib/Linknode.ExifLib.csproj -OutputDirectory .. -Properties Configuration=Release
+mono Nuget.exe push <APIKEY> -Source http://build.linknode.co.uk/nuget/

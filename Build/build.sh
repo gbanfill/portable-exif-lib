@@ -1,0 +1,1 @@
+/Applications/Xamarin\ Studio.app/Contents/MacOS/mdtool -v build "--configuration:Release|iPhoneSimulator" ../portable-exif-lib.sln 
