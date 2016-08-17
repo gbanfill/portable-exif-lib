@@ -17,7 +17,14 @@ namespace Linknode.ExifLib
             DateTime then = DateTime.Now;
             ExifReader reader = new ExifReader(stream);
             reader.info.CropFactor = CalculateCropFactor (reader.info, reader.info.Width, reader.info.Height);
-            reader.info.FocalLengthWithCropFactor = reader.info.FocalLength * reader.info.CropFactor;
+            if (reader.info.CropFactor == 0)
+            {
+                reader.info.FocalLengthWithCropFactor = reader.info.FocalLength;
+            }
+            else
+            {
+                reader.info.FocalLengthWithCropFactor = reader.info.FocalLength * reader.info.CropFactor;
+            }
             reader.info.LoadTime = (DateTime.Now - then);
             return reader.info;
         }
