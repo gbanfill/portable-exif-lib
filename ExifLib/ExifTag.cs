@@ -191,25 +191,11 @@ namespace Linknode.ExifLib
                     case ExifId.UserComment: info.UserComment = GetStringValue(); break;
                     case ExifId.ExposureTime: info.ExposureTime = GetNumericValue(0); break;
                     case ExifId.FNumber: info.FNumber = GetNumericValue(0); break;
-                    case ExifId.FocalLength: 
-                        info.FocalLength = GetStringValue();
-                        if (info.FocalLength.Contains("/"))
-                        {
-                            var focalString = info.FocalLength.Split('/');
-                            var value = int.Parse(focalString[0]) / int.Parse(focalString[1]);
-                            info.FocalLengthCalculated = value;
-                        }
-                        else
-                        {
-                            int focalLengthValue = 0;
-
-                            if (int.TryParse(info.FocalLength, out focalLengthValue))
-                            {
-                                info.FocalLengthCalculated = focalLengthValue;
-                            }
-
-                        }
-                        break;
+                    case ExifId.FocalLength: info.FocalLength = GetNumericValue(0); break;
+                    case ExifId.FocalLengthIn35MM: info.FocalLengthIn35mm = GetInt (0); break;
+                    case ExifId.FocalPlaneResolutionUnit: info.FocalPlaneResolutionUnit = GetInt(0); break;
+                    case ExifId.FocalPlaneXResolution: info.FocalPlaneXResolution = GetNumericValue (0); break;
+                    case ExifId.FocalPlaneYResolution: info.FocalPlaneYResolution = GetNumericValue (0); break;
                     case ExifId.FlashUsed: info.Flash = (ExifFlash)GetInt(0); break;
                     default: break;
                 }

@@ -15,18 +15,54 @@ namespace Linknode.ExifLib
         /// <summary>
         /// Focal Length brought out of EXIF data
         /// </summary>
-        public string FocalLength
+        public double FocalLength
         {
             get;
             set;
         }
 
         /// <summary>
-        /// Calculated focal length so that it is more readable
+        /// The Focal Length in 35mm equivilant value
         /// </summary>
-        public int FocalLengthCalculated
-        {
+        /// <value>The focal length in35mm.</value>
+        public int FocalLengthIn35mm {
+            get; 
+            set;
+        }
+
+        /// <summary>
+        /// The Focal Plan Resolution unit
+        /// </summary>
+        /// <value>The focal plane resolution unit.</value>
+        public int FocalPlaneResolutionUnit {
             get;
+            set;
+        }
+
+        /// <summary>
+        /// Gets or sets the focal plane XR esolution.
+        /// </summary>
+        /// <value>The focal plane XR esolution.</value>
+        public double FocalPlaneXResolution { get; set; }
+
+        /// <summary>
+        /// Gets or sets the focal plane YR esolution.
+        /// </summary>
+        /// <value>The focal plane YR esolution.</value>
+        public double FocalPlaneYResolution { get; set;}
+
+        /// <summary>
+        /// Gets or sets the crop factor.
+        /// </summary>
+        /// <value>The crop factor.</value>
+        public double CropFactor { get; set; }
+
+        /// <summary>
+        /// Gets or sets the focal length with crop factor.
+        /// </summary>
+        /// <value>The focal length with crop factor.</value>
+        public double FocalLengthWithCropFactor {
+            get; 
             set;
         }
 

@@ -17,7 +17,8 @@ namespace Linknode.ExifLib
     public enum ExifIFD
     {
         Exif = 0x8769,
-        Gps = 0x8825
+        Gps = 0x8825,
+        MakerNote = 0x927c            
     }
 
     public enum ExifId
@@ -41,10 +42,15 @@ namespace Linknode.ExifLib
         ExposureTime = 0x829A,
         FNumber = 0x829D,
         FocalLength = 0x920A,
+        FocalLengthIn35MM = 0xa405,
         Copyright = 0x8298,
         DateTimeOriginal = 0x9003,
         FlashUsed = 0x9209,
-        UserComment = 0x9286
+        UserComment = 0x9286,
+        FocalPlaneResolutionUnit = 0xa210,
+        FocalPlaneXResolution = 0xa20e,
+        FocalPlaneYResolution = 0xa20f
+
     }
 
     public enum ExifGps
